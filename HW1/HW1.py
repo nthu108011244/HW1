@@ -10,7 +10,11 @@ import csv
 # Read cwb weather data
 cwb_filename = '/home/ee2405/ee2405/HW1/108011244.csv'
 data = []
-target_data = [['C0A880', 'None'], ['C0F9A0', 'None'], ['C0G640', 'None'], ['C0R190', 'None'], ['C0X260', 'None']] #initiate the target data: set all TEMP(temperature) to 'None'
+target_data = [['C0A880', 'None'], #initiate the target data: set all TEMP(temperature) to 'None'
+               ['C0F9A0', 'None'], 
+               ['C0G640', 'None'], 
+               ['C0R190', 'None'], 
+               ['C0X260', 'None']] 
 header = []
 with open(cwb_filename) as csvfile:
    mycsv = csv.DictReader(csvfile)
